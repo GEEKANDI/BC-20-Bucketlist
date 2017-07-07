@@ -15,7 +15,7 @@
     <body>
         <div class="container">
             <header>
-                <h1>Login or Register to create a Bucketlist</h1>
+                <h1> Register and login to create a Bucketlist</h1>
             </header>
 
             <section>				
@@ -24,7 +24,7 @@
                     <a class="hiddenanchor" id="toregister"></a>
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
-                        <div id="login" class="animate form">
+                        <!-- <div id="login" class="animate form">
                             <form> 
                                 <h1>Log in</h1> 
                                 <p> 
@@ -75,6 +75,40 @@
 									Already have an account ?
 									<a href="#tologin" class="to_register"> log in here </a>
 								</p>
+                            </form>
+                        </div> -->
+
+                        <!-- Bucketlist Creation -->
+
+                        <div id="creategoal" class="animate form">
+                            <form> 
+                                <h1> Create a Goal </h1> 
+                                <p> 
+                                    <label for="goalcategory" class="goalcategory">Select Your Goal Category</label>
+                                   <select id="goalcategory" name="goalcategory">
+                                        <option selected >Personal Development</option>
+                                        <option>Finance n Career</option>
+                                        <option>Health n Fitness</option>
+                                        <option>Family</option>
+                                        <option>Fun n Recreation</option>
+                                    </select><br>
+                                </p>
+                                <p> 
+                                    <label for="bucketlist" class="bucketlist" data-icon="bl" > Your goal</label>
+                                    <input id="bucketlist" name="bucketlist" required="required" type="text" placeholder="What you want to achieve"/> 
+                                </p>
+                                <p> 
+                                    <label for="description" class="description" data-icon="">Goal Description </label>
+                                    <input id="description" name="description" required="required" type="text" placeholder="What about it?"/>
+                                </p>
+                                <p> 
+                                    <label for="duedate" class="duedate" data-icon="">Give a due date </label>
+                                    <input id="duedate" name="duedate" required="required" type="date" />
+                                </p>
+                                <p class="signin button"> 
+                                    <input type="submit" value="Creat Goal"/> 
+                                </p>
+                                
                             </form>
                         </div>
 						
