@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}
+BucketApp
+{% endblock %}
+
+{% block content %}
+    <section>               
+        <div id="container_demo" >
+            <div id="wrapper">
+                <div id="login" class="animate">
+                    <form action="" method="post">
+                         <h1> Add a goal </h1> 
+                        <p>
+                            <label for="goalcategory">Select Language</label>
+                            <select id="goalcategory" name="goalcategory" required="required" type="text" >
+                                <option selected>Personal Development</option>
+                                <option>Business n Carrer</option>
+                                <option>Health n Fitness</option>
+                                <option>Family</option>
+                                <option>Fun n Recreation</option>
+                                
+                            </select>
+                        </p>
+                        <p> 
+                            <label for="activities" > Activities towards achieving it</label>
+                             <input id="activities" name="activities" required="required" type="text" placeholder="What will you do to accomplish it"/> 
+                        </p>
+                        <p> 
+                            <label for="description" > Describe it</label>
+                             <input id="description" name="description" required="required" type="text" placeholder="How you gonna be a better you"/> 
+                        </p>
+                        <p> 
+                            <label for="duedate" >When do you wish to achieve this </label>
+                            <input id="duedate" name="duedate" required="required" type="date" />
+                        </p>
+                        <p class="signin button"> 
+                            <input type="submit" value="Create Bucket"/> 
+                        </p>
+                        <p>  
+                                    Not Logged in ?
+                                    <a href="{{ url_for('login') }}" class="to_register"> Log in here </a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block sidebar %}
+{% endblock %}
